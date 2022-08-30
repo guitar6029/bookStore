@@ -1,0 +1,34 @@
+.book__btn{
+    background-color: rgb(225, 224, 231);
+    outline: none;
+    border: none;
+    height: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.book__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    width: 250px;
+    
+}
+
+
+.book__image > img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.book__title, .book__author{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+    width: 150px;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+<form (ngSubmit)="submit()" class="form__container">
+  <div class="form__label"><label for="email">Email</label></div>
+  <div class="form__input">
+    <input
+      type="email"
+      id="email"
+      required
+      name="email"
+      placeholder="joe@example.com" [(ngModel)]="form.email"
+    />
+  </div>
+
+  <div class="form__label"><label for="password">Password</label></div>
+  <div class="form__input">
+    <input type="password" name="password" id="password" required [(ngModel)]="form.password"/>
+  </div>
+
+  <div class="form__btn">
+    <button type="submit">
+      <ng-container *ngIf="isLoading()">
+        Loading...
+      </ng-container>
+      <ng-container *ngIf="!isLoading()">
+        Login
+      </ng-container>
+    
+    </button>
+  </div>
+
+  
+  
+
+  <div>
+    <span
+      >Don't have an account yet ? <a routerLink="/register" >Register.</a></span
+    >
+  </div>
+</form>

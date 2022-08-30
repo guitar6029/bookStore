@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: "Robot", sans-serif;
+  --main-color: rgb(42, 135, 222);
+  --main-link-bg-color: rgb(227, 230, 237);
+  --main-btn-bg-hover-color: rgb(113, 140, 165);
+}
+
+.error {
+  border: 1px solid red;
+  padding: 5px;
+  color:red;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.form__btn > button {
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: var(--main-link-bg-color);
+}
+
+.form__btn > button:hover{
+    transition: all 0.2s ease-in;
+    background-color: var(--main-btn-bg-hover-color);
+}
+
+
+.form__container {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 500px;
+  margin: 10% auto;
+  background-color: rgb(232, 238, 245);
+  border-radius: 10px;
+}
+
+.form__container > div > span > a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--main-color);
+}
+
+.form__input > input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+}

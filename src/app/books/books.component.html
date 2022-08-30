@@ -1,0 +1,7 @@
+<h2 class="main__title">Programming Books List</h2>
+
+<div class="book__container">
+  <ng-container *ngFor="let book of books">
+    <app-book  [book]="book"></app-book>
+  </ng-container>
+</div>

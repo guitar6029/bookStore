@@ -1,0 +1,11 @@
+<h2>Your Cart : </h2>
+<div *ngIf="getCart().length === 0">
+    <h3>Your shopping cart is empty</h3>
+</div>
+<div *ngIf="getCart().length >= 1">
+      <div class="cart__item" *ngFor="let book of getCart()">
+        <div class="book__name">{{ book.name | titlecase }}</div>
+        <div class="book__author">{{ book.author | titlecase }}</div>
+        <div class="book__price">{{ book.amount | currency }}</div>
+      </div>
+</div>

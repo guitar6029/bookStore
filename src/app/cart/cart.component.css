@@ -1,0 +1,28 @@
+.cart__item {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border-radius: 10px;
+    background-color: rgb(117, 185, 240);
+    margin-bottom: 10px;
+}
+
+.cart__item > div {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 15px;
+    
+}
+
+.cart__item > .book__name {
+    width: 250px;
+}
+
+.cart__item > .book__author {
+    width: 100px;
+}
+
+.cart__item > .book__price {
+    width: 70px;
+}

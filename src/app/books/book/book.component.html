@@ -1,0 +1,14 @@
+<div class="book__item">
+    <div class="book__image">
+      <img
+        [src]="book.imageSrc"
+        width="100"
+        alt="{{ book.name | titlecase }}"
+      />
+    </div>
+    <h3 class="book__title">{{ book.name | titlecase }}</h3>
+    <h5 class="book__author">{{ book.author | titlecase }}</h5>
+    <h5>{{ book.amount | currency }}</h5>
+    <button class="book__btn" *ngIf="!isInCart"(click)="addToCart()">Add to Cart</button>
+    <button class="book__btn" *ngIf="isInCart" (click)="removeFromCart()">Remove from Cart</button>
+  </div>

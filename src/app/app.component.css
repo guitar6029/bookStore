@@ -1,0 +1,38 @@
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 70px;
+  width: 100%;
+  background-color: var(--main-color);
+  color: rgb(18, 17, 17);
+}
+
+.nav__links {
+  background-color: var(--main--link-bg-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.nav__left,
+.nav__right {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.nav__left {
+  align-items: center;
+}
+
+.nav__right {
+  margin-right: 10px;
+}
+
+.nav__logo {
+  margin-left: 20px;
+  cursor: pointer;
+}
